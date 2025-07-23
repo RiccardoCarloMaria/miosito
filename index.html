@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>La mia pagina personale</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riccardo Carlo Maria – Pagina Personale</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f0f0f5;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    main {
       max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: auto;
+      padding: 20px;
+      background-color: #f9f9f9;
     }
     img {
-      max-width: 150px;
+      width: 150px;
       border-radius: 50%;
+      margin-bottom: 10px;
     }
-    h1 {
-      margin-bottom: 0;
+    h1, h2 {
+      color: #333;
     }
-    p {
-      line-height: 1.6;
+    a {
+      color: #007acc;
+      text-decoration: none;
     }
-    footer {
-      text-align: center;
-      margin: 2rem 0;
-      font-size: 0.9rem;
-      color: #888;
+    a:hover {
+      text-decoration: underline;
+    }
+    .sezione {
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Ciao! Sono Riccardo</h1>
-    <p>Benvenuto nella mia pagina personale</p>
-  </header>
+  <h1>Riccardo Carlo Maria</h1>
+  <img src="profilo.jpg" alt="Foto profilo">
 
-  <main>
-    <img src="profilo.jpg" alt="Foto profilo">
+  <div class="sezione">
     <h2>Chi sono</h2>
-    <p>
-      Mi chiamo Riccardo e sono appassionato di fotografia, musica, storia, viaggi e arte.
-      In questa pagina condivido un po’ di me stesso.
-    </p>
+    <p>Mi interesso di fotografia, viaggi, arte, storia e letteratura. In questa pagina puoi trovare le mie foto, documenti, e contatti.</p>
+  </div>
 
-    <h2>Contatti</h2>
+  <div class="sezione">
+    <h2>Foto</h2>
     <ul>
-      <li>Email: riccardo.alker@gmail.com</li>
-      <li>GitHub: <a href="https://github.com/Riccardo" target="_blank">Riccardo</a></li>
+      <li><a href="foto1.jpg" target="_blank">Foto 1</a></li>
+      <li><a href="foto2.jpg" target="_blank">Foto 2</a></li>
+      <!-- Aggiungi altre foto -->
     </ul>
-  </main>
+  </div>
 
-  <footer>
-    &copy; 2025 - La mia pagina personale
-  </footer>
+  <div class="sezione">
+    <h2>Documenti</h2>
+    <ul>
+      <li><a href="cv.pdf" target="_blank">Curriculum Vitae</a></li>
+      <li><a href="documento.pdf" target="_blank">Progetto</a></li>
+      <!-- Aggiungi altri documenti -->
+    </ul>
+  </div>
+
+  <div class="sezione">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:riccardo.alker@gmail.com">riccardo.alker@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/RiccardoCarloMaria" target="_blank">RiccardoCarloMaria</a></p>
+  </div>
 
 </body>
 </html>
+
