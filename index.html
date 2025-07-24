@@ -1,71 +1,128 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Riccardo Carlo Maria Alker – Pagina Personale</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riccardo Carlo Maria Alker – Galleria</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
       background-color: #f9f9f9;
-    }
-    img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-    h1, h2 {
       color: #333;
     }
-    a {
-      color: #007acc;
-      text-decoration: none;
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
-    a:hover {
+
+    nav {
+      background-color: #0055aa;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
       text-decoration: underline;
     }
-    .sezione {
-      margin-top: 40px;
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .galleria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 0 10px;
+    }
+
+    .galleria img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .galleria img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      background-color: #eee;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
 
-  <h1>Riccardo Carlo Maria Alker</h1>
-  <img src="profilo.jpg" alt="Foto profilo">
+  <header>
+    <h1>Riccardo Carlo Maria Alker</h1>
+    <p>Benvenuto nella mia galleria fotografica</p>
+  </header>
 
-  <div class="sezione">
-    <h2>Chi sono</h2>
-    <p>Mi interesso di fotografia, viaggi, arte, storia e letteratura. In questa pagina puoi trovare le mie foto, documenti, e contatti.</p>
-  </div>
+  <nav>
+    <a href="#viaggi">Viaggi</a>
+    <a href="#arte">Arte</a>
+    <a href="#famiglia">Famiglia</a>
+  </nav>
 
-  <div class="sezione">
-    <h2>Foto</h2>
-    <ul>
-      <li><a href="foto1.jpg" target="_blank">Foto 1</a></li>
-      <li><a href="foto2.jpg" target="_blank">Foto 2</a></li>
-      <!-- Aggiungi altre foto -->
-    </ul>
-  </div>
+  <section id="viaggi">
+    <h2>🌍 Viaggi</h2>
+    <div class="galleria">
+      <img src="foto/viaggi/viaggio1.jpg" alt="Viaggio 1">
+      <img src="foto/viaggi/viaggio2.jpg" alt="Viaggio 2">
+      <!-- Altre foto -->
+    </div>
+  </section>
 
-  <div class="sezione">
-    <h2>Documenti</h2>
-    <ul>
-      <li><a href="cv.pdf" target="_blank">Curriculum Vitae</a></li>
-      <li><a href="documento.pdf" target="_blank">Progetto</a></li>
-      <!-- Aggiungi altri documenti -->
-    </ul>
-  </div>
+  <section id="arte">
+    <h2>🎨 Arte</h2>
+    <div class="galleria">
+      <img src="foto/arte/arte1.jpg" alt="Arte 1">
+      <img src="foto/arte/arte2.jpg" alt="Arte 2">
+      <!-- Altre foto -->
+    </div>
+  </section>
 
-  <div class="sezione">
-    <h2>Contatti</h2>
-    <p>Email: <a href="mailto:riccardo.alker@gmail.com">riccardo.alker@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/RiccardoCarloMaria" target="_blank">Riccardo Carlo Maria Alker</a></p>
-  </div>
+  <section id="famiglia">
+    <h2>👪 Famiglia</h2>
+    <div class="galleria">
+      <img src="foto/famiglia/famiglia1.jpg" alt="Famiglia 1">
+      <img src="foto/famiglia/famiglia2.jpg" alt="Famiglia 2">
+      <!-- Altre foto -->
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Riccardo Carlo Maria Alker – Tutti i diritti riservati
+  </footer>
 
 </body>
 </html>
+
 
